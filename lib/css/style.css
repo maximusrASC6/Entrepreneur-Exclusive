@@ -1,9 +1,30 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    30% { left: -80%; }
+    40% { left: -80%; }
+    50% { left: -180%; }
+    60% { left: -180%; }
+    70% { left: -250%; }
+    80% { left: -250%; }
+    90% { left: -250%; }
+    100% { left: -300%; }
+    }
+
+    @-webkit-keyframes aitf {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+    }
+
 body {
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
-  color:rgb(0, 0, 0);
+  background-image:
+  linear-gradient(rgba(37, 49, 121, 0.52), rgba(17, 17, 17, 0.73)),
+  url(https://entrepreneurhandbook.co.uk/wp-content/uploads/2018/03/Example-of-vector-abstract-image.png);
+  background-size: cover;
   font-family:'Roboto';
   height:100vh;
   overflow:hidden;
+  margin: 0;
 }
 
 
@@ -16,25 +37,69 @@ body {
 .navBar {
 text-align: right;
 display: flex;
+height: 10vh;
 align-items: center;
 padding:none;
 margin: 0;
-border: thin;
-/* border-bottom: 1px solid black; */
-}
-p {
-    font-family: 'Roboto';
-    font-size: 25px;
-    border-bottom: 1px solid black;
-    display: flex;
-    align-items: stretch;
+border: thin; 
+border-bottom: 5px solid black; 
 }
 
+p {
+    font: 700 4em/1 "Oswald", sans-serif;
+      letter-spacing: 0;
+      font-size: 23px;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+      background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
 .navBar a {
-    color: blue;
+    color:white;
 }
 
 .join {
     font-family: 'Courier New', Courier, monospace;
     margin-left: 50%;
 }
+
+div#img {
+    max-height:900%;
+    max-width: 900%;
+    margin: 0;
+    border-bottom: 9px solid rgb(185, 141, 21);
+    border-top: 9px solid rgb(185, 141, 21);
+    border-left: 9px solid rgb(185, 141, 21);
+    border-right: 9px solid rgb(185, 141, 21);
+
+}
+
+div#slider { 
+overflow: hidden; 
+}
+div#slider figure img { 
+width: 20%; 
+float: left; 
+}
+div#slider figure { 
+  position: relative;
+  width: 300%;
+  margin: 0;
+  /* left: 0;
+  text-align: left;
+  font-size: 0; */
+  animation: 25s slidy infinite;
+  background-repeat: repeat;
+}
+  
