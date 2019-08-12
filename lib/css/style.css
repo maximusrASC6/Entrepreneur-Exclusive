@@ -1,6 +1,40 @@
+body {
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:rgb(0, 0, 0);
+  font-family:'Roboto';
+  height:100vh;
+  overflow:hidden;
+}
+
+
 .box {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
+    border: thin;
+    padding: 0px;
     margin: 0;
+} 
+
+.navBar {
+text-align: right;
+display: flex;
+align-items: center;
+padding:none;
+margin: 0;
+border: thin;
+/* border-bottom: 1px solid black; */
+}
+p {
+    font-family: 'Roboto';
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: stretch;
+}
+
+.navBar a {
+    color: blue;
+}
+
+.join {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 50%;
 }
